@@ -8,10 +8,6 @@
     "@whitebeardeveloper/contracts": "^0.2.0",
     "react": "^19.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/whitebeardeveloper/mf-dashboard-ui.git"
-  },
   "dependencies": {
     "date-fns": "^4.4.0",
     "radix-ui": "^1.8.1",
