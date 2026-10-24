@@ -18,5 +18,8 @@
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3"
   }
 }
