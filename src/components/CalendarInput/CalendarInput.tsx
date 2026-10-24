@@ -9,9 +9,16 @@ import styles from "./CalendarInput.module.scss";
 export interface CalendarInputProps {
   value: DashboardDate;
   onChange: (value: DashboardDate) => void;
+  minDate?: Date;
+  maxDate?: Date;
 }
 
-export function CalendarInput({ value, onChange }: CalendarInputProps) {
+export function CalendarInput({
+  value,
+  onChange,
+  minDate,
+  maxDate,
+}: CalendarInputProps) {
   const [isOpen, setIsOpen] = useState(false);
   const selectedDate = parseISO(value);
   const formattedDate = format(selectedDate, "d MMMM yyyy", { locale: ru });
@@ -77,6 +84,8 @@ export function CalendarInput({ value, onChange }: CalendarInputProps) {
               showNeighboringMonth={false}
               prevAriaLabel="Предыдущий месяц"
               nextAriaLabel="Следующий месяц"
+              minDate={minDate}
+              maxDate={maxDate}
               onChange={nextValue => {
                 if (!(nextValue instanceof Date)) {
                   return;
