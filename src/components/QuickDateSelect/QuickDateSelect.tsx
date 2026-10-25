@@ -11,8 +11,8 @@ export interface QuickDateSelectProps {
 export function QuickDateSelect({ value, onChange }: QuickDateSelectProps) {
   const options = [
     { label: "Сегодня", date: getDashboardDate() },
-    { label: "Вчера", date: getDashboardDate(-1) },
     { label: "Завтра", date: getDashboardDate(1) },
+    { label: "Послезавтра", date: getDashboardDate(2) },
   ];
 
   const selectedValue = options.find(option => option.date === value)?.date;
