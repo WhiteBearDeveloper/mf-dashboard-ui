@@ -77,8 +77,8 @@ export function CalendarInput({
               showNeighboringMonth={false}
               prevAriaLabel="Предыдущий месяц"
               nextAriaLabel="Следующий месяц"
-              minDate={minDate}
-              maxDate={maxDate}
+              {...(minDate === undefined ? {} : { minDate })}
+              {...(maxDate === undefined ? {} : { maxDate })}
               onChange={nextValue => {
                 if (!(nextValue instanceof Date)) {
                   return;
