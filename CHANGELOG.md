@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.2.2
+
+### Patch Changes
+
+- 4c39bb6: Avoid passing undefined date bounds to the calendar.
+
 ## 0.2.1
 
 ### Patch Changes
