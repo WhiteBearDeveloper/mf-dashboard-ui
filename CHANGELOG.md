@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.2.3
+
+### Patch Changes
+
+- 62a14f6: Align quick date options with the available weather forecast.
+
 ## 0.2.2
 
 ### Patch Changes
