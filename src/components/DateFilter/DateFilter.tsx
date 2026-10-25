@@ -1,17 +1,14 @@
-import type { DashboardDate } from "@whitebeardeveloper/contracts";
-import { CalendarInput } from "./../CalendarInput/CalendarInput";
-import { QuickDateSelect } from "./../QuickDateSelect/QuickDateSelect";
+import { CalendarInput } from "#components/CalendarInput/CalendarInput";
+import { QuickDateSelect } from "#components/QuickDateSelect/QuickDateSelect";
+import type { CalendarInputProps } from "#types/Calendar";
 import styles from "./DateFilter.module.scss";
 
-export interface DateFilterProps {
-  value: DashboardDate;
-  onChange: (value: DashboardDate) => void;
-}
+export type DateFilterProps = CalendarInputProps;
 
-export function DateFilter({ value, onChange }: DateFilterProps) {
+export function DateFilter({ value, onChange, ...restProps }: DateFilterProps) {
   return (
     <div className={styles.filter} role="group" aria-label="Фильтр по дате">
-      <CalendarInput value={value} onChange={onChange} />
+      <CalendarInput value={value} onChange={onChange} {...restProps} />
       <QuickDateSelect value={value} onChange={onChange} />
     </div>
   );

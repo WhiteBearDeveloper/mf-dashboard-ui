@@ -3,15 +3,8 @@ import { ru } from "date-fns/locale";
 import Calendar from "react-calendar";
 import { Popover } from "radix-ui";
 import { useState } from "react";
-import type { DashboardDate } from "@whitebeardeveloper/contracts";
+import type { CalendarInputProps } from "#types/Calendar";
 import styles from "./CalendarInput.module.scss";
-
-export interface CalendarInputProps {
-  value: DashboardDate;
-  onChange: (value: DashboardDate) => void;
-  minDate?: Date;
-  maxDate?: Date;
-}
 
 export function CalendarInput({
   value,

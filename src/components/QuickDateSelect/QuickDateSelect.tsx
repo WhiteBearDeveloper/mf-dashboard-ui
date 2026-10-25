@@ -1,6 +1,6 @@
 import { Label, Select } from "radix-ui";
 import type { DashboardDate } from "@whitebeardeveloper/contracts";
-import { getDashboardDate } from "../../utils/date";
+import { getDashboardDate } from "#utils/date";
 import styles from "./QuickDateSelect.module.scss";
 
 export interface QuickDateSelectProps {
