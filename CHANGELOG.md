@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.2.1
+
+### Patch Changes
+
+- 2bc8b2a: Configure package-local aliases and preserve the DateFilterProps export.
+
 ## 0.2.0
 
 ### Minor Changes
