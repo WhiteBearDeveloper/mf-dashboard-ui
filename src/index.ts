@@ -7,4 +7,10 @@ export type { DateFilterProps } from "#components/DateFilter/DateFilter";
 export { QuickDateSelect } from "#components/QuickDateSelect/QuickDateSelect";
 export type { QuickDateSelectProps } from "#components/QuickDateSelect/QuickDateSelect";
 
+export { SelectField } from "#components/SelectField/SelectField";
+export type {
+  SelectFieldOption,
+  SelectFieldProps,
+} from "#components/SelectField/SelectField";
+
 export { getDashboardDate } from "#utils/date";
