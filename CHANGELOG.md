@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.3.0
+
+### Minor Changes
+
+- 3dac7ae: Add reusable SelectField and refactor QuickDateSelect to use it
+
 ## 0.2.3
 
 ### Patch Changes
