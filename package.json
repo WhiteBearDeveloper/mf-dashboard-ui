@@ -1,6 +1,6 @@
 {
   "name": "@whitebeardeveloper/ui",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Reusable UI components for Dashboard",
   "imports": {
     "#types/*": "./src/types/*.ts",

@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.7.0
+
+### Minor Changes
+
+- 3781a6a: Expose the shared reset stylesheet as a public Sass entry point.
+
 ## 0.6.1
 
 ### Patch Changes
