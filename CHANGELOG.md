@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.6.1
+
+### Patch Changes
+
+- 199da46: Fix Sass breakpoint imports in UI components.
+
 ## 0.6.0
 
 ### Minor Changes
