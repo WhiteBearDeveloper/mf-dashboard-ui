@@ -8,8 +8,7 @@
   "imports": {
     "#types/*": "./src/types/*.ts",
     "#components/*": "./src/components/*.tsx",
-    "#utils/*": "./src/utils/*.ts",
-    "#styles/*": "./src/styles/_*.scss"
+    "#utils/*": "./src/utils/*.ts"
   },
   "peerDependencies": {
     "@whitebeardeveloper/contracts": "^0.2.0",
