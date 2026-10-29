@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.4.1
+
+### Patch Changes
+
+- bfb64c2: Fix optional selected value handling in QuickDateSelect.
+
 ## 0.4.0
 
 ### Minor Changes
