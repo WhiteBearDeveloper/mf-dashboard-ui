@@ -22,7 +22,7 @@ export function QuickDateSelect({ value, onChange }: QuickDateSelectProps) {
       label="Быстрый выбор"
       onChange={onChange}
       options={options}
-      selectedValue={selectedValue}
+      {...(selectedValue === undefined ? {} : { selectedValue })}
     />
   );
 }
