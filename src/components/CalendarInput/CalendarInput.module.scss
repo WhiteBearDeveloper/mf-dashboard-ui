@@ -1,3 +1,5 @@
+@use "#styles/breakpoints" as breakpoints;
+
 .field {
   display: flex;
   min-width: 0;
@@ -207,7 +209,7 @@
   clip-path: inset(50%);
 }
 
-@media (max-width: 380px) {
+@include breakpoints.narrow-mobile-down {
   .calendar {
     width: 100%;
 

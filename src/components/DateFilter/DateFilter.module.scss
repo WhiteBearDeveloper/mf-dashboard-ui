@@ -1,8 +1,10 @@
+@use "#styles/breakpoints" as breakpoints;
+
 .filter {
   align-items: flex-end;
 }
 
-@media (max-width: 640px) {
+@include breakpoints.mobile-down {
   .filter {
     align-items: stretch;
   }

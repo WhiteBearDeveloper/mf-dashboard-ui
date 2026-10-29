@@ -1,0 +1,21 @@
+$breakpoint-tablet: 900px;
+$breakpoint-mobile: 640px;
+$breakpoint-narrow-mobile: 380px;
+
+@mixin tablet-down {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-down {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin narrow-mobile-down {
+  @media (max-width: $breakpoint-narrow-mobile) {
+    @content;
+  }
+}

@@ -1,3 +1,5 @@
+@use "#styles/breakpoints" as breakpoints;
+
 .flexRow {
   display: flex;
   width: 100%;
@@ -10,7 +12,7 @@
   flex: 0 1 calc(50% - 7px);
 }
 
-@media (max-width: 640px) {
+@include breakpoints.mobile-down {
   .flexRow > * {
     flex-basis: 100%;
   }

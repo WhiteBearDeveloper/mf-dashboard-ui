@@ -4,10 +4,12 @@
   "description": "Reusable UI components for Dashboard",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
+  "sass": "./src/styles/index.scss",
   "imports": {
     "#types/*": "./src/types/*.ts",
     "#components/*": "./src/components/*.tsx",
-    "#utils/*": "./src/utils/*.ts"
+    "#utils/*": "./src/utils/*.ts",
+    "#styles/*": "./src/styles/_*.scss"
   },
   "peerDependencies": {
     "@whitebeardeveloper/contracts": "^0.2.0",

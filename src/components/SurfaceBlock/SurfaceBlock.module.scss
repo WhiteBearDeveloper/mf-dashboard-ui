@@ -1,3 +1,5 @@
+@use "#styles/breakpoints" as breakpoints;
+
 .surfaceBlock {
   box-sizing: border-box;
   min-width: 0;
@@ -8,7 +10,7 @@
   box-shadow: 0 12px 32px rgba(24, 40, 63, 0.08);
 }
 
-@media (max-width: 640px) {
+@include breakpoints.mobile-down {
   .surfaceBlock {
     padding: 18px;
   }
