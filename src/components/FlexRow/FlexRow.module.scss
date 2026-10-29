@@ -1,0 +1,17 @@
+.flexRow {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.flexRow > * {
+  min-width: 0;
+  flex: 0 1 calc(50% - 7px);
+}
+
+@media (max-width: 640px) {
+  .flexRow > * {
+    flex-basis: 100%;
+  }
+}

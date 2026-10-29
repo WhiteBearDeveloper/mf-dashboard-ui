@@ -16,4 +16,7 @@ export type {
 export { SurfaceBlock } from "#components/SurfaceBlock/SurfaceBlock";
 export type { SurfaceBlockProps } from "#components/SurfaceBlock/SurfaceBlock";
 
+export { FlexRow } from "#components/FlexRow/FlexRow";
+export type { FlexRowProps } from "#components/FlexRow/FlexRow";
+
 export { getDashboardDate } from "#utils/date";
