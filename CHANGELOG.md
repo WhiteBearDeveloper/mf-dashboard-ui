@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.5.0
+
+### Minor Changes
+
+- 14fea2d: Add reusable FlexRow layout component with responsive equal-width columns.
+
 ## 0.4.1
 
 ### Patch Changes
