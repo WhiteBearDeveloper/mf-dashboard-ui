@@ -1,0 +1,15 @@
+.surfaceBlock {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--dashboard-border, #e4eaf1);
+  border-radius: 18px;
+  background-color: var(--dashboard-surface, #ffffff);
+  box-shadow: 0 12px 32px rgba(24, 40, 63, 0.08);
+}
+
+@media (max-width: 640px) {
+  .surfaceBlock {
+    padding: 18px;
+  }
+}

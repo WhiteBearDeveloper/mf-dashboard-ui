@@ -13,4 +13,7 @@ export type {
   SelectFieldProps,
 } from "#components/SelectField/SelectField";
 
+export { SurfaceBlock } from "#components/SurfaceBlock/SurfaceBlock";
+export type { SurfaceBlockProps } from "#components/SurfaceBlock/SurfaceBlock";
+
 export { getDashboardDate } from "#utils/date";
