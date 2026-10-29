@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.4.0
+
+### Minor Changes
+
+- 691fa04: Add reusable SurfaceBlock component for dashboard cards.
+
 ## 0.3.0
 
 ### Minor Changes
