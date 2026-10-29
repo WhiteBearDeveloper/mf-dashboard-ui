@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.6.0
+
+### Minor Changes
+
+- fdc7392: Expose shared Sass breakpoints through the package Sass entry point.
+
 ## 0.5.0
 
 ### Minor Changes
