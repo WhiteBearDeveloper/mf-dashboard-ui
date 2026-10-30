@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.8.2
+
+### Patch Changes
+
+- 1bd1080: Make the Inter font asset export resolve in Webpack.
+
 ## 0.8.1
 
 ### Patch Changes
