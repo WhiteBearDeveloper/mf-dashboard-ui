@@ -15,3 +15,10 @@ export const Default: Story = {
     children: "Пример содержимого SurfaceBlock",
   },
 };
+
+export const WithCustomClassName: Story = {
+  args: {
+    children: "SurfaceBlock с пользовательским классом",
+    className: "custom-surface",
+  },
+};

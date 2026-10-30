@@ -1,7 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import { useArgs } from "storybook/preview-api";
+import { addDays, startOfDay, subDays } from "date-fns";
 import { DateFilter } from "@components/DateFilter/DateFilter";
 import { getDashboardDate } from "@utils/date";
+
+const storyToday = startOfDay(new Date());
+const minStoryDate = subDays(storyToday, 6);
+const maxStoryDate = addDays(storyToday, 5);
 
 const meta = {
   title: "UI/DateFilter",
@@ -31,7 +36,19 @@ export const Default: Story = {};
 
 export const BoundedDateRange: Story = {
   args: {
-    minDate: new Date(2026, 9, 25),
-    maxDate: new Date(2026, 10, 5),
+    minDate: minStoryDate,
+    maxDate: maxStoryDate,
+  },
+};
+
+export const MinDateOnly: Story = {
+  args: {
+    minDate: minStoryDate,
+  },
+};
+
+export const MaxDateOnly: Story = {
+  args: {
+    maxDate: maxStoryDate,
   },
 };
