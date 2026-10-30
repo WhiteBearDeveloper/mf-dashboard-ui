@@ -18,6 +18,9 @@
     },
     "./fonts": {
       "sass": "./src/styles/fonts.scss"
+    },
+    "./fonts/inter-variable.woff2": {
+      "asset": "./src/assets/fonts/Inter/InterVariable.woff2"
     }
   },
   "peerDependencies": {
