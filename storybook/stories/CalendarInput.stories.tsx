@@ -7,6 +7,7 @@ const meta = {
   component: CalendarInput,
   args: {
     value: "2026-10-31",
+    onChange: () => undefined,
   },
   render: function Render(args) {
     const [{ value }, updateArgs] = useArgs();
@@ -15,8 +16,6 @@ const meta = {
       <CalendarInput
         {...args}
         value={value}
-        minDate={new Date(2026, 9, 25)}
-        maxDate={new Date(2026, 10, 5)}
         onChange={nextValue => updateArgs({ value: nextValue })}
       />
     );
@@ -27,4 +26,11 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const BoundedDateRange: Story = {};
+export const BoundedDateRange: Story = {
+  args: {
+    minDate: new Date(2026, 9, 25),
+    maxDate: new Date(2026, 10, 5),
+  },
+};
+
+export const Unbounded: Story = {};
