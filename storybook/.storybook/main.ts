@@ -38,6 +38,11 @@ const config: StorybookConfig = {
   framework: "@storybook/react-webpack5",
   webpackFinal: async webpackConfig => {
     if (webpackConfig.resolve) {
+      webpackConfig.resolve.alias = {
+        ...(webpackConfig.resolve.alias ?? {}),
+        react: path.resolve(process.cwd(), "node_modules/react"),
+        "react-dom": path.resolve(process.cwd(), "node_modules/react-dom"),
+      };
       webpackConfig.resolve.plugins = [
         ...(webpackConfig.resolve.plugins || []),
         new TsconfigPathsPlugin({
