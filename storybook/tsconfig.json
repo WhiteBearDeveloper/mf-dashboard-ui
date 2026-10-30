@@ -3,7 +3,8 @@
   "compilerOptions": {
     "paths": {
       "@components/*": ["../src/components/*"],
-      "@utils/*": ["../src/utils/*"]
+      "@utils/*": ["../src/utils/*"],
+      "@styles/*": ["../src/styles/*"]
     }
   },
   "include": [".storybook/**/*.ts", "stories/**/*.ts", "stories/**/*.tsx"]

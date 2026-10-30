@@ -42,6 +42,10 @@ const config: StorybookConfig = {
         ...(webpackConfig.resolve.alias ?? {}),
         react: path.resolve(process.cwd(), "node_modules/react"),
         "react-dom": path.resolve(process.cwd(), "node_modules/react-dom"),
+        "@whitebeardeveloper/ui/fonts/inter-variable.woff2": path.resolve(
+          process.cwd(),
+          "../src/assets/fonts/Inter/InterVariable.woff2",
+        ),
       };
       webpackConfig.resolve.plugins = [
         ...(webpackConfig.resolve.plugins || []),
