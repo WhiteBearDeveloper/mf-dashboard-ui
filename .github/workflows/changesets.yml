@@ -6,6 +6,8 @@ on:
       - master
     paths-ignore:
       - README.md
+      - storybook/**
+      - .github/workflows/changesets.yml
 
 permissions:
   contents: write
