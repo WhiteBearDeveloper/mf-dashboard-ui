@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.8.0
+
+### Minor Changes
+
+- aa01bb4: Add Inter font assets and a public Sass entry point.
+
 ## 0.7.0
 
 ### Minor Changes
