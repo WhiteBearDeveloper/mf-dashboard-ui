@@ -8,6 +8,7 @@ const meta = {
   component: DateFilter,
   args: {
     value: getDashboardDate(),
+    onChange: () => undefined,
   },
   render: function Render(args) {
     const [{ value }, updateArgs] = useArgs();
@@ -27,3 +28,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
+
+export const BoundedDateRange: Story = {
+  args: {
+    minDate: new Date(2026, 9, 25),
+    maxDate: new Date(2026, 10, 5),
+  },
+};
