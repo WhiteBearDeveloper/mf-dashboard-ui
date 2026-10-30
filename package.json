@@ -15,6 +15,9 @@
     },
     "./reset": {
       "sass": "./src/styles/_reset.scss"
+    },
+    "./fonts": {
+      "sass": "./src/styles/fonts.scss"
     }
   },
   "peerDependencies": {
