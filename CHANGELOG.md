@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.8.1
+
+### Patch Changes
+
+- cfd6880: Fix resolution of the bundled Inter font asset.
+
 ## 0.8.0
 
 ### Minor Changes
