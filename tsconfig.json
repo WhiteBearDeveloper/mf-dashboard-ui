@@ -8,7 +8,12 @@
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "#components/*": ["./src/components/*.tsx"],
+      "#types/*": ["./src/types/*.ts"],
+      "#utils/*": ["./src/utils/*.ts"]
+    }
   },
   "include": ["src"]
 }

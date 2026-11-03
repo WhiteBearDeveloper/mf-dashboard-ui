@@ -2,25 +2,41 @@
   "name": "@whitebeardeveloper/ui",
   "version": "0.8.2",
   "description": "Reusable UI components for Dashboard",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node scripts/copy-package-assets.mjs",
+    "prepack": "npm run build"
+  },
   "imports": {
-    "#types/*": "./src/types/*.ts",
-    "#components/*": "./src/components/*.tsx",
-    "#utils/*": "./src/utils/*.ts"
+    "#types/*": {
+      "types": "./dist/types/*.d.ts",
+      "default": "./dist/types/*.js"
+    },
+    "#components/*": {
+      "types": "./dist/components/*.d.ts",
+      "default": "./dist/components/*.js"
+    },
+    "#utils/*": {
+      "types": "./dist/utils/*.d.ts",
+      "default": "./dist/utils/*.js"
+    }
   },
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "sass": "./src/styles/index.scss",
-      "default": "./src/index.ts"
+      "types": "./dist/index.d.ts",
+      "sass": "./dist/styles/index.scss",
+      "default": "./dist/index.js"
     },
     "./reset": {
-      "sass": "./src/styles/_reset.scss"
+      "sass": "./dist/styles/_reset.scss"
     },
     "./fonts": {
-      "sass": "./src/styles/fonts.scss"
+      "sass": "./dist/styles/fonts.scss"
     },
-    "./fonts/inter-variable.woff2": "./src/assets/fonts/Inter/InterVariable.woff2"
+    "./fonts/inter-variable.woff2": "./dist/assets/fonts/Inter/InterVariable.woff2"
   },
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "@whitebeardeveloper/contracts": "^0.2.0",
     "react": "^19.0.0"
@@ -31,14 +47,12 @@
     "radix-ui": "^1.8.1",
     "react-calendar": "^6.0.1"
   },
-  "files": [
-    "src"
-  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.3",
-    "@types/react": "^19.3.0"
+    "@types/react": "^19.3.0",
+    "typescript": "^6.0.3"
   }
 }
