@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.8.3
+
+### Patch Changes
+
+- f35de41: Publish compiled JavaScript, TypeScript declarations, and component styles.
+
 ## 0.8.2
 
 ### Patch Changes
