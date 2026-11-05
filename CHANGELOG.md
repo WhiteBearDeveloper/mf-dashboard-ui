@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.8.4
+
+### Patch Changes
+
+- 3bdf4fe: Simplified value change handling in SelectField
+
 ## 0.8.3
 
 ### Patch Changes
