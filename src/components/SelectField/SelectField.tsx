@@ -25,18 +25,7 @@ export const SelectField = ({
     <Label.Root className={styles.field}>
       <span className={styles.label}>{label}</span>
 
-      <Select.Root
-        value={selectedValue ?? ""}
-        onValueChange={nextValue => {
-          const selectedOption = options.find(
-            option => option.value === nextValue,
-          );
-
-          if (selectedOption) {
-            onChange(selectedOption.value);
-          }
-        }}
-      >
+      <Select.Root value={selectedValue ?? ""} onValueChange={onChange}>
         <Select.Trigger className={styles.select} type="button">
           <Select.Value placeholder={placeholder} />
 
