@@ -1,5 +1,11 @@
 # @whitebeardeveloper/ui
 
+## 0.9.0
+
+### Minor Changes
+
+- ed77097: Add a shared UI theme with CSS tokens and application overrides. Consumers must load @whitebeardeveloper/ui/theme to provide the default styles.
+
 ## 0.8.4
 
 ### Patch Changes
