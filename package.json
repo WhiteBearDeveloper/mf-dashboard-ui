@@ -26,6 +26,9 @@
       "sass": "./dist/styles/index.scss",
       "default": "./dist/index.js"
     },
+    "./theme": {
+      "sass": "./dist/styles/theme.scss"
+    },
     "./reset": {
       "sass": "./dist/styles/_reset.scss"
     },

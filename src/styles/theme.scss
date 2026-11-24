@@ -1,0 +1,50 @@
+:root {
+  --ui-text: #203047;
+  --ui-muted: #718096;
+  --ui-surface: #ffffff;
+  --ui-border: #e4eaf1;
+
+  --ui-brand-accent: #51c7b5;
+  --ui-accent: #219b8d;
+  --ui-accent-hover: #168d82;
+  --ui-accent-active: #177f75;
+  --ui-on-accent: #ffffff;
+
+  --ui-accent-text: #176f66;
+  --ui-accent-subtle: #edf7f5;
+  --ui-accent-subtle-hover: #e6f7f4;
+  --ui-focus-ring: rgba(81, 199, 181, 0.2);
+  --ui-selection-surface: rgba(81, 199, 181, 0.14);
+
+  --ui-muted-subtle: #9aa6b4;
+  --ui-border-hover: #b8c9d5;
+  --ui-disabled-text: #b7c0cb;
+
+  --ui-radius-card: 18px;
+  --ui-radius-control: 12px;
+  --ui-shadow-card: 0 12px 32px rgba(24, 40, 63, 0.08);
+  --ui-font-family:
+    Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --ui-space-xs: 6px;
+  --ui-space-sm: 8px;
+  --ui-space-md: 12px;
+  --ui-space-lg: 18px;
+  --ui-space-xl: 24px;
+
+  --ui-border-width: 1px;
+
+  --ui-font-size-caption: 11px;
+  --ui-font-size-small: 12px;
+  --ui-font-size-control: 13px;
+  --ui-font-size-body: 15px;
+  --ui-font-weight-semibold: 600;
+  --ui-font-weight-bold: 700;
+
+  --ui-radius-dropdown: 14px;
+  --ui-shadow-dropdown: 0 16px 40px rgba(32, 48, 71, 0.14);
+
+  --ui-calendar-today-text: #168d82;
+  --ui-radius-calendar-popover: 16px;
+  --ui-shadow-calendar-popover: 0 16px 40px rgba(32, 48, 71, 0.16);
+}
