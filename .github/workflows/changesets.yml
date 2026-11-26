@@ -6,6 +6,7 @@ on:
       - master
     paths-ignore:
       - README.md
+      - AGENTS.md
       - storybook/**
       - .github/workflows/changesets.yml
       - .gitignore
